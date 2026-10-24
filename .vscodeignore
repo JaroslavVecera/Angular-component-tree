@@ -7,3 +7,4 @@ tsconfig.json
 **/*.vsix
 tests/**
 .github/**
+media/*.jpg

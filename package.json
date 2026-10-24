@@ -2,7 +2,7 @@
   "name": "angular-component-tree",
   "displayName": "Angular Component Tree",
   "description": "Navrhni strom Angular komponent (signal inputs, outputs, models) a vygeneruj ho jedním klikem.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "jvecera",
   "license": "MIT",
   "repository": {
@@ -45,7 +45,7 @@
     "commands": [
       {
         "command": "angularComponentTree.setTarget",
-        "title": "Použít jako cíl pro Angular Component Tree",
+        "title": "Generate component structure",
         "category": "Angular Component Tree"
       }
     ],
@@ -54,7 +54,7 @@
         {
           "command": "angularComponentTree.setTarget",
           "when": "explorerResourceIsFolder",
-          "group": "navigation@99"
+          "group": "1_angularComponentTree@1"
         }
       ]
     }

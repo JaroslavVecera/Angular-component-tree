@@ -1,6 +1,6 @@
 <div align="center">
 
-# Angular Component Tree
+<img src="media/angular-component-tree-banner.jpg" alt="Angular Component Tree" width="100%">
 
 **Sketch a tree of Angular components and services in a VS Code side panel, then generate all of it in one click.**
 
@@ -26,13 +26,14 @@ Scaffolding a feature usually means running `ng generate` a dozen times, moving 
 - **Parents are wired automatically.** Child components are imported into the parent and placed into its template as self-closing tags, with every required input, required model and output already bound.
 - **Component-scoped services.** Services go into the component's `providers` (not `providedIn: 'root'`) and are injected with `inject()`.
 - **CSS or SCSS** with a single checkbox.
-- **Friendly target picker.** Defaults to `src/app`. Browse workspace folders in a quick pick, open the system dialog, or right-click a folder in the Explorer.
+- **Friendly target picker.** Defaults to `src/app`. Type with folder autocomplete, browse workspace folders in a quick pick, or open the system dialog.
+- **Explorer context menu.** Right-click any folder → **Generate component structure** opens the panel with that folder preselected.
 - **Safe generation.** Names are validated live, and before anything is written you choose whether to overwrite or skip existing files.
 
 ## How it works
 
-1. Click the **Angular Component Tree** icon in the Activity Bar.
-2. Choose the **target folder**. It starts at `src/app` (or the workspace root). Use **Browse** to walk through existing folders, or type the name of a new subfolder.
+1. Click the **Angular Component Tree** icon in the Activity Bar, or right-click a folder in the Explorer and choose **Generate component structure**.
+2. Choose the **target folder**. It starts at `src/app` (or the workspace root), or at the folder you right-clicked. Type with autocomplete, use **Browse** to walk through existing folders, or type the name of a new subfolder.
 3. Build the tree. Component and service names are written in **kebab-case**.
 
    | Key / button | Action |
