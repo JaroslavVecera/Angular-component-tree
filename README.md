@@ -4,10 +4,10 @@
 
 **Sketch a tree of Angular components and services in a VS Code side panel, then generate all of it in one click.**
 
-[![Repo size](https://img.shields.io/github/repo-size/jvecera/Angular-component-tree?style=flat-square)](https://github.com/jvecera/Angular-component-tree)
-[![Last commit](https://img.shields.io/github/last-commit/jvecera/Angular-component-tree?style=flat-square)](https://github.com/jvecera/Angular-component-tree/commits)
-[![Latest release](https://img.shields.io/github/v/release/jvecera/Angular-component-tree?style=flat-square)](https://github.com/jvecera/Angular-component-tree/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/jvecera/Angular-component-tree/total?style=flat-square)](https://github.com/jvecera/Angular-component-tree/releases)
+[![Repo size](https://img.shields.io/github/repo-size/JaroslavVecera/Angular-component-tree?style=flat-square)](https://github.com/JaroslavVecera/Angular-component-tree)
+[![Last commit](https://img.shields.io/github/last-commit/JaroslavVecera/Angular-component-tree?style=flat-square)](https://github.com/JaroslavVecera/Angular-component-tree/commits)
+[![Latest release](https://img.shields.io/github/v/release/JaroslavVecera/Angular-component-tree?style=flat-square)](https://github.com/JaroslavVecera/Angular-component-tree/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/JaroslavVecera/Angular-component-tree/total?style=flat-square)](https://github.com/JaroslavVecera/Angular-component-tree/releases)
 [![VS Code](https://img.shields.io/badge/VS%20Code-%E2%89%A5%201.85-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)](https://code.visualstudio.com/)
 [![Angular](https://img.shields.io/badge/Angular-signals-DD0031?style=flat-square&logo=angular&logoColor=white)](https://angular.dev/guide/signals)
 
@@ -159,12 +159,12 @@ export class UserDataService {}
 
 ### From a GitHub release (recommended)
 
-1. Download the latest `Angular-component-tree-x.y.z.vsix` from [**Releases**](https://github.com/jvecera/Angular-component-tree/releases/latest).
+1. Download the latest `angular-component-tree-x.y.z.vsix` from [**Releases**](https://github.com/JaroslavVecera/Angular-component-tree/releases/latest).
 2. Install it:
    - **VS Code UI:** Extensions view → `⋯` menu → **Install from VSIX…** → pick the file, or
    - **Terminal:**
      ```bash
-     code --install-extension Angular-component-tree-x.y.z.vsix
+     code --install-extension angular-component-tree-x.y.z.vsix
      ```
 3. Reload the window if prompted.
 
@@ -173,11 +173,11 @@ export class UserDataService {}
 Requires [Node.js](https://nodejs.org/) 18+.
 
 ```bash
-git clone https://github.com/jvecera/Angular-component-tree.git
+git clone https://github.com/JaroslavVecera/Angular-component-tree.git
 cd Angular-component-tree
 npm install
-npm run package                     # produces Angular-component-tree-<version>.vsix
-code --install-extension Angular-component-tree-*.vsix
+npm run package                     # produces angular-component-tree-<version>.vsix
+code --install-extension angular-component-tree-*.vsix
 ```
 
 To debug, open the folder in VS Code and press <kbd>F5</kbd>. A new Extension Development Host window starts with the extension loaded.
