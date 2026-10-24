@@ -1,0 +1,74 @@
+{
+  "name": "angular-component-tree",
+  "displayName": "Angular Component Tree",
+  "description": "Navrhni strom Angular komponent (signal inputs, outputs, models) a vygeneruj ho jedním klikem.",
+  "version": "0.0.2",
+  "publisher": "jvecera",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jvecera/angular-component-tree.git"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "angular",
+    "component",
+    "generator",
+    "signals"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "angularComponentTree",
+          "title": "Angular Component Tree",
+          "icon": "media/activity-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "angularComponentTree": [
+        {
+          "type": "webview",
+          "id": "angularComponentTree.editor",
+          "name": "Strom komponent"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "angularComponentTree.setTarget",
+        "title": "Použít jako cíl pro Angular Component Tree",
+        "category": "Angular Component Tree"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "angularComponentTree.setTarget",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@99"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^3.2.0",
+    "typescript": "^5.6.0"
+  }
+}
